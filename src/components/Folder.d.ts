@@ -1,0 +1,20 @@
+import type { ComponentType, CSSProperties, ReactNode } from "react";
+export type FolderProps = {
+  items?: ReactNode[];
+  label?: string;
+  color?: string;
+  size?: number;
+  theme?: "light" | "dark";
+  draggable?: boolean;
+  zoomOnClick?: boolean;
+  intro?: boolean;
+  peek?: boolean;
+  tilt?: number;
+  bounce?: number;
+  onOpenChange?: (open: boolean) => void;
+  onItemClick?: (item: ReactNode, index: number) => void;
+  className?: string;
+  style?: CSSProperties;
+};
+declare const Folder: ComponentType<FolderProps>;
+export default Folder;
