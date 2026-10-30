@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
-    "/api/default-photos/[id]": ["./private/default-photos/*.jpg"],
+    "/api/default-photos/*": ["./private/default-photos/*.jpg"],
   },
 
   async rewrites() {
